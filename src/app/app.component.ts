@@ -1,3 +1,4 @@
+// Todos os elementos que o usuário visualizar na tela passam por esse componente
 import { Component } from '@angular/core';
 
 @Component({
@@ -6,5 +7,6 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'angular-basic-app';
+  title = 'angular-basic-app'; // Variável
+
 }
