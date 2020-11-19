@@ -9,6 +9,10 @@ import { ContatoComponent } from './pagina/contato/contato.component';
 import { HomeComponent } from './pagina/home/home.component';
 import { MenuComponent } from './pagina/menu/menu.component';
 import { ListaComponent } from './pagina/lista/lista.component';
+import { LOCALE_ID } from '@angular/core';
+import { registerLocaleData } from '@angular/common';
+import ptBr from '@angular/common/locales/pt';
+registerLocaleData(ptBr);
 
 @NgModule({
   declarations: [
@@ -23,7 +27,7 @@ import { ListaComponent } from './pagina/lista/lista.component';
     AppRoutingModule,
     FormsModule
   ],
-  providers: [],
+  providers: [{provide: LOCALE_ID, useValue: 'pt'}],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

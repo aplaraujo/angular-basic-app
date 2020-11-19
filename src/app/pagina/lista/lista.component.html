@@ -1,1 +1,16 @@
-<p>lista works!</p>
+<table class="table">
+  <tr>
+    <th>Nome</th>
+    <th>E-mail</th>
+    <th>Preço</th>
+    <th>Deconto</th>
+    <th>Embarque</th>
+  </tr>
+  <tr>
+    <td>{{produto.nome | uppercase }}</td>
+    <td>{{produto.email}}</td>
+    <td>{{produto.preco | currency: 'BRL'}}</td>
+    <td>{{produto.desconto | percent}}</td>
+    <td>{{produto.embarque | date}}</td>
+  </tr>
+</table>
